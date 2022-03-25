@@ -1,10 +1,14 @@
 
 import './App.css';
+import Firearms from './components/guns/Firearms';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Whats upp , React app added!!</h1>
+    <div>
+      <Firearms></Firearms>
+
     </div>
   );
 }

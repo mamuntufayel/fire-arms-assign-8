@@ -1,0 +1,9 @@
+.shop-compartment{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.firearm-types{
+    background: lightgray;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+}
