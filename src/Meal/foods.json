@@ -1,0 +1,112 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Panta-Elish",
+    "seller": "My meal",
+    "price": 620,
+    "stock": 20,
+    "ratings": 5,
+    "ratingsCount": 3725,
+    "img": "https://travelfoodatlas.com/wp-content/uploads/2018/02/Panta-bhat.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+    "name": "Fuchka",
+    "seller": "My meal",
+    "price": 196,
+    "stock": 19,
+    "ratings": 5,
+    "ratingsCount": 4355,
+    "img": "https://pg.world/upl/ckeditor4_files/e2e56c042e602687b66d77ab906751a2.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+    "name": "Jhal-Muri",
+    "seller": "Addidas",
+    "price": 245,
+    "stock": 20,
+    "ratings": 4,
+    "ratingsCount": 3972,
+    "img": "https://www.travelmate.com.bd/wp-content/uploads/2018/09/Bhelpuri-1024x973.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+    "name": "Beef-Vhuna",
+    "seller": "Addidas",
+    "price": 229,
+    "stock": 10,
+    "ratings": 5,
+    "ratingsCount": 1764,
+    "img": "https://gbc-cdn-public-media.azureedge.net/img81602.735x1102.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+    "name": "Dal-Vaat-Dim",
+    "seller": "Addidas",
+    "price": 287,
+    "stock": 11,
+    "ratings": 4,
+    "ratingsCount": 799,
+    "img": "https://i.pinimg.com/originals/90/e3/e4/90e3e459bc7ecf9f41d0495b8d77c53f.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+    "name": "Fish-fry",
+    "seller": "Addidas",
+    "price": 138,
+    "stock": 19,
+    "ratings": 3,
+    "ratingsCount": 4372,
+    "img": "https://www.onceinalifetimejourney.com/wp-content/uploads/2019/08/Bangladeshi-Fried-fish-01.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "9c0c13c2-54e4-4001-809b-afbd9d84037d",
+    "name": "Mutton-biriyani",
+    "seller": "Addidas",
+    "price": 226,
+    "stock": 1,
+    "ratings": 4,
+    "ratingsCount": 2870,
+    "img": "https://i.pinimg.com/originals/35/94/68/359468e4d6af2123947b9a66c50ed1fc.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
+    "name": "Chicken-biriyani",
+    "seller": "Addidas",
+    "price": 319,
+    "stock": 7,
+    "ratings": 4,
+    "ratingsCount": 1360,
+    "img": "https://i.pinimg.com/originals/47/49/07/474907261a6685de5368e37d6b4178b0.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
+    "name": "Kacchi-biriyani",
+    "seller": "Addidas",
+    "price": 260,
+    "stock": 4,
+    "ratings": 5,
+    "ratingsCount": 1976,
+    "img": "https://www.trendingtop5.com/wp-content/uploads/2015/09/Kolkata-Biryani-Bengali-mutton.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "ac44095f-230e-4502-8816-dea3eaae8320",
+    "name": "Exclisive Chicken biriyani",
+    "seller": "Addidas",
+    "price": 437,
+    "stock": 1,
+    "ratings": 4,
+    "ratingsCount": 565,
+    "img": "https://i.ytimg.com/vi/K4w0RSWu1tk/maxresdefault.jpg",
+    "quantity": 0
+  }
+]
