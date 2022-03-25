@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Gun from '../gun/Gun';
 import './Firearms.css'
 
+
 const Firearms = () => {
     const [guns, setGuns] = useState([])
     useEffect(() => {
@@ -11,8 +12,8 @@ const Firearms = () => {
     }, [])
     return (
         <div>
-            <h1>fire arms</h1>
-            <h3>Do not exceed more than four</h3>
+            <h1 style={{ textAlign: 'center', fontSize: '60px', color: 'grey' }}>Fire Arms</h1>
+            <h3 style={{ textAlign: 'center' }}>Do not exceed more than four</h3>
             <div className='shop-compartment'>
                 <div className="firearm-types">
 

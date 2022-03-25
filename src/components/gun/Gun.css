@@ -4,6 +4,21 @@
 
 }
 .Each-gun{
-    padding-left: 30px;
     
+    border: 3px dotted lightpink;
+    
+}
+.btn-info{
+    background: lightcyan;
+    height: 40px;
+    width: 100%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon{
+    padding-left: 10px;
+    font-size: large;
 }
