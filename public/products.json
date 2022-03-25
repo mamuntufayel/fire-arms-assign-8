@@ -108,25 +108,5 @@
     "action": "Semi-Automatic",
     "price": "750",
     "category": "Rifle"
-  },
-  {
-    "id": 12,
-    "name": "Ruger AR-556 MPR",
-    "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/RugerAR556RMP.png",
-    "bullet": ".223 NATO",
-    "capacity": "30 + 1",
-    "action": "Semi-Automatic",
-    "price": "880",
-    "category": "Rifle"
-  },
-  {
-    "id": 13,
-    "name": "Savage 110 Elite",
-    "img": "https://raw.githubusercontent.com/mir-hussain/guns/main/guns/savage110.png",
-    "bullet": ".300 Winchester Magnum",
-    "capacity": "5",
-    "action": "Bolt",
-    "price": "1870",
-    "category": "Rifle"
   }
 ]

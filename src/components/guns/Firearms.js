@@ -4,9 +4,10 @@ import './Firearms.css'
 
 
 const Firearms = () => {
+    const url = "products.json"
     const [guns, setGuns] = useState([])
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/mir-hussain/guns/main/data.json')
+        fetch(url)
             .then(res => res.json())
             .then(data => setGuns(data))
     }, [])
@@ -24,8 +25,8 @@ const Firearms = () => {
                         ></Gun>)
                     }
                 </div>
-                <div className="firearm-summary">
-                    <h2>Summary</h2>
+                <div className="firearm-cart-summary">
+                    <h2 style={{ textAlign: 'center', fontSize: '40px', color: 'grey' }}>Summary</h2>
                 </div>
             </div>
         </div>
