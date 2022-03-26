@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Gun from '../gun/Gun';
+import Summary from '../summary/Summary';
 import './Firearms.css'
 
 
 const Firearms = () => {
     const url = "products.json"
     const [guns, setGuns] = useState([])
-    const [cart, setCart] = useState([]);
+    const [item, setItem] = useState([]);
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -14,9 +15,10 @@ const Firearms = () => {
     }, [])
 
     const handleAddToCart = (gun) => {
-        console.log(gun);
+        const newItem = [...item, gun];
+        setItem(newItem)
     }
-
+    // console.log(item);
     return (
         <div>
             <h1 style={{ textAlign: 'center', fontSize: '60px', color: 'grey' }}>Fire Arms</h1>
@@ -34,7 +36,12 @@ const Firearms = () => {
                 </div>
                 <div className="firearm-cart-summary">
                     <h2 style={{ textAlign: 'center', fontSize: '40px', color: 'grey' }}>Summary</h2>
-                    <h4>Selected items:</h4>
+                    <h4>Selected items:{item.length}</h4>
+                    {
+                        item.map(product => <Summary
+                            product={product}
+                        ></Summary>)
+                    }
                 </div>
             </div>
         </div>
