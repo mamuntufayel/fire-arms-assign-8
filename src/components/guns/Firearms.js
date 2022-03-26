@@ -21,8 +21,18 @@ const Firearms = () => {
 
         }
         else {
+            alert("Sorry you can't add more than 4 guns at a time !!!")
             return;
         }
+    }
+    const handleToClearCart = () => {
+        const newItem = [];
+        setItem(newItem)
+    }
+    const handleToShowRandom = (gun) => {
+        const newItem = [...item, gun];
+        const randomItem = Math.random(newItem) * 4;
+        setItem(randomItem)
     }
     // console.log(item);
     return (
@@ -50,7 +60,8 @@ const Firearms = () => {
                             product={product}
                         ></Summary>)
                     }
-                    <button style={{ height: '30px', width: '75%', background: 'lightSalmon' }}>Choose 1 for me</button>
+                    <button onClick={handleToShowRandom} style={{ height: '30px', width: '75%', background: 'lightSalmon', margin: '15px' }}>Choose 1 for me</button>
+                    <button onClick={handleToClearCart} style={{ height: '30px', width: '75%', background: 'lightSeaGreen' }}>Remove All from cart</button>
                 </div>
             </div>
         </div>
