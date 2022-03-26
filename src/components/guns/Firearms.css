@@ -13,3 +13,8 @@
     background: lightgray;
     text-align: center;
 }
+@media screen and (max-width:500px) {
+    .firearm-types{
+        grid-template-columns: 1fr;
+    }
+}

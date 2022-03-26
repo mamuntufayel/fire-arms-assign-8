@@ -1,0 +1,13 @@
+.selected-gun img{
+height: 50px;
+width: 50px;
+}
+.selected-gun{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.selected-items-cart{
+    
+}

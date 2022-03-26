@@ -15,8 +15,14 @@ const Firearms = () => {
     }, [])
 
     const handleAddToCart = (gun) => {
-        const newItem = [...item, gun];
-        setItem(newItem)
+        if (item.length !== 4) {
+            const newItem = [...item, gun];
+            setItem(newItem)
+
+        }
+        else {
+            return;
+        }
     }
     // console.log(item);
     return (
@@ -36,12 +42,15 @@ const Firearms = () => {
                 </div>
                 <div className="firearm-cart-summary">
                     <h2 style={{ textAlign: 'center', fontSize: '40px', color: 'grey' }}>Summary</h2>
-                    <h4>Selected items:{item.length}</h4>
+                    <h4>Selected items: {item.length}</h4>
+                    <h3>Selected Gun</h3>
                     {
                         item.map(product => <Summary
+                            key={product.id}
                             product={product}
                         ></Summary>)
                     }
+                    <button style={{ height: '30px', width: '75%', background: 'lightSalmon' }}>Choose 1 for me</button>
                 </div>
             </div>
         </div>
