@@ -8,6 +8,7 @@ const Gun = (props) => {
     const { handleAddToCart } = props;
     const { name, img, price, id } = props.gun;
 
+
     return (
         <div className='Each-gun'>
             <img src={img} alt="" />

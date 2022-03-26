@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Gun from '../gun/Gun';
+import Random from '../random/Random';
 import Summary from '../summary/Summary';
 import './Firearms.css'
 
@@ -8,6 +9,7 @@ const Firearms = () => {
     const url = "products.json"
     const [guns, setGuns] = useState([])
     const [item, setItem] = useState([]);
+
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -29,16 +31,22 @@ const Firearms = () => {
         const newItem = [];
         setItem(newItem)
     }
-    const handleToShowRandom = (gun) => {
-        const newItem = [...item, gun];
-        const randomItem = Math.random(newItem) * 4;
+
+    const handleToShowRandom = () => {
+
+        const newItem = [...item];
+        console.log(newItem);
+        const randomItem = [Math.floor(Math.random() * newItem.length)]
+        console.log(randomItem)
         setItem(randomItem)
     }
-    // console.log(item);
+
+
+
     return (
         <div>
             <h1 style={{ textAlign: 'center', fontSize: '60px', color: 'grey' }}>Fire Arms</h1>
-            <h3 style={{ textAlign: 'center' }}>Do not exceed more than four</h3>
+            <h3 style={{ textAlign: 'center' }}>Do not exceed more than four guns</h3>
             <div className='shop-compartment'>
                 <div className="firearm-types">
 
@@ -47,6 +55,8 @@ const Firearms = () => {
                             key={gun.id}
                             gun={gun}
                             handleAddToCart={handleAddToCart}
+                            handleToShowRandom={handleToShowRandom}
+
                         ></Gun>)
                     }
                 </div>
@@ -58,9 +68,15 @@ const Firearms = () => {
                         item.map(product => <Summary
                             key={product.id}
                             product={product}
+
                         ></Summary>)
                     }
-                    <button onClick={handleToShowRandom} style={{ height: '30px', width: '75%', background: 'lightSalmon', margin: '15px' }}>Choose 1 for me</button>
+                    {
+                        <Random
+                            key={item.id}
+                            handleToShowRandom={handleToShowRandom}
+                        ></Random>
+                    }
                     <button onClick={handleToClearCart} style={{ height: '30px', width: '75%', background: 'lightSeaGreen' }}>Remove All from cart</button>
                 </div>
             </div>

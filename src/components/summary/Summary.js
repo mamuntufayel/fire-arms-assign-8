@@ -2,7 +2,7 @@ import React from 'react';
 import './Summary.css'
 
 const Summary = (props) => {
-    console.log(props);
+    // console.log(props);
     const { name, img } = props.product;
     return (
         <div className='selected-items-cart'>
